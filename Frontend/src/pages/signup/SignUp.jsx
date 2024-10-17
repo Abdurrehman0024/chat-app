@@ -94,8 +94,11 @@ const SignUp = () => {
 
           <GenderCheckbox onCheckboxChange={handleCheckboxChange} selectedGender={inputs.gender} />
 
-          <button className="mt-1 bg-white bg-opacity-30 hover:bg-opacity-40 transition duration-500 rounded-md shadow-md shadow-slate-600/70 p-3 w-8/12 font-semibold mx-auto block">
-            Sign Up
+          <button className="mt-1 bg-white bg-opacity-30 hover:bg-opacity-40 transition duration-500 rounded-md shadow-md shadow-slate-600/70 p-3 w-8/12 font-semibold mx-auto block"
+            disabled={loading}
+          >
+            {loading ? <span className='loading loading-spinner'></span>: "Sign up"}
+
           </button>
         </form>
         <Link to='/login' className="text-center pt-4 text-sm">
