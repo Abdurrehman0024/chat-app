@@ -25,15 +25,16 @@ const useSendMessage = () => {
 			setMessages([...messages, data]);
 		}
     
-    catch (error) {
-			toast.error(error.message);
-		} 
-    
-    finally {
-			setLoading(false);
-		}
+			catch (error) {
+				toast.error(error.message);
+			} 
+			
+			finally {
+				setLoading(false);
+			}
 	};
 
 	return { sendMessage, loading };
+	
 };
 export default useSendMessage;
