@@ -101,7 +101,7 @@ const SignUp = () => {
 
           </button>
         </form>
-        <Link to='/login' className="text-center pt-4 text-sm">
+        <Link to='/login' className="text-center pt-4 text-sm mt-8 mb-4">
           Already have an account?
         </Link>
       </div>
