@@ -34,7 +34,7 @@ const SignUp = () => {
           <span className='text-blue-500'> ChatApp</span>
         </div>
 
-        <form onSubmit={handleSubmit} className="mt-6">
+        <form onSubmit={handleSubmit} className="mt-6 mb-4">
           <div className="mb-4">
             <label htmlFor="fullname" className='block text-left '>
               Fullname:
